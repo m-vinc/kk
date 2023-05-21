@@ -6,7 +6,7 @@ After searching for someone who already did it (didn't find it honestly) I start
 
 ## Retrive credentials from the keyring
 
-At the very begining I'm just seeking of how the klist command retrieve these credentials with `strace` and other thing like that and notice some `keyctl(KEYCTL_READ` and `keyctl(KEYCTL_SEARCH` syscalls which lead me to read more about linux keyring and how to set and retrieve key from a user persistent keyring used by kerberos.
+At the very begining I'm just seeking how the klist command retrieve these credentials with `strace` and other thing like that and notice some `keyctl(KEYCTL_READ` and `keyctl(KEYCTL_SEARCH` syscalls which lead me to read more about linux keyring and how to set and retrieve key from a user persistent keyring used by kerberos.
 
 Note that all of the data retrived from these keys need to be unmarshal using the format describe [here](https://github.com/krb5/krb5/blob/master/src/lib/krb5/ccache/ccmarshal.c)
 
